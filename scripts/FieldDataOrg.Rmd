@@ -1,0 +1,21 @@
+---
+title: "Field Data Organize"
+author: "Anna Talucci"
+date: "2023-12-19"
+output: html_document
+---
+
+# Overview
+Organize field data to use with SAR Sentinel Data
+
+# Packages
+```{r}
+library(tidyverse)
+library(sf)
+```
+
+# Data
+```{r}
+lcsites = read_csv("../data/fieldcsv/LC_SITES_11142023.cvs")
+lcsdata = read_csv("../data/fieldcsv/LC_Data_09052023.cvs")
+```
